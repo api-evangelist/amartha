@@ -42,5 +42,13 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Amartha is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Amartha (PT Amartha Mikro Fintek, operating as Amartha Financial Group) is an Indonesian technology company founded in 2010 that builds digital financial infrastructure for the grassroots economy, connecting micro-entrepreneurs — predominantly women running micro and small businesses in rural villages — with affordable working capital from retail and institutional funders. Its consumer and agent brands include Amartha Prosper (investment), Celengan (savings), Modal (group loans), AmarthaLink (agent network) and the AmarthaFin mobile app for payments and bill purchase, alongside two business lines — Institutional Investments and Embedded Lending — that let banks, non-bank financial institutions, insurers and technology partners channel loans to Amartha borrowers.
+
+- https://amartha.com/en
+- https://amartha.com/en/about-us/
+- https://amartha.com/en/bisnis/embedded-lending
+- https://amartha.com/en/bisnis/institutional-investments
+
+## API surface
+
+No public API surface as of 2026-08-06. `api.amartha.com`, `developer.amartha.com` and `docs.amartha.com` do not resolve; `/openapi.json`, `/openapi.yaml`, `/swagger.json`, `/api-docs` and `/llms.txt` all return 404 on `amartha.com`, as does every probed `/.well-known/` path (`security.txt`, `openid-configuration`, `oauth-authorization-server`, `api-catalog`, `agent-card.json`, `agent.json`). The partner-facing Embedded Lending and Institutional Investments products route to an `amartha.typeform.com` contact form instead of an integration reference.

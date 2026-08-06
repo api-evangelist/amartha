@@ -1,17 +1,33 @@
 aid: amartha
 name: Amartha
-description: 'Amartha is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Amartha (PT Amartha Mikro Fintek, operating as Amartha Financial Group)
+  is an Indonesian technology company founded in 2010 that builds digital financial
+  infrastructure for the grassroots economy, connecting micro-entrepreneurs — predominantly
+  women running micro and small businesses in rural villages — with affordable working
+  capital from retail and institutional funders. Its consumer and agent brands include
+  Amartha Prosper (investment), Celengan (savings), Modal (group loans), AmarthaLink
+  (agent network) and the AmarthaFin mobile app for payments and bill purchase, alongside
+  two business lines — Institutional Investments and Embedded Lending — that let banks,
+  non-bank financial institutions, insurers and technology partners channel loans to
+  Amartha borrowers. The company is headquartered at Amartha Village in South Jakarta,
+  and runs its social impact programs through Amartha.org.'
+image: https://amartha.com/logo.svg
 url: https://raw.githubusercontent.com/api-evangelist/amartha/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-06'
 modified: '2026-08-06'
 tags:
 - Company
+- Financial Services
+- Fintech
+- Lending
+- Microfinance
+- Peer to Peer Lending
+- Financial Inclusion
+- Payments
+- Indonesia
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +35,44 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/amartha-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://amartha.com/en
+- type: About
+  url: https://amartha.com/en/about-us/
+- type: Blog
+  url: https://amartha.com/en/blog
+- type: HelpCenter
+  url: https://faq.amartha.com/hc/en-us
+- type: TermsOfService
+  url: https://amartha.com/en/syarat-dan-ketentuan
+- type: PrivacyPolicy
+  url: https://amartha.com/en/kebijakan-privasi
+- type: Careers
+  url: https://amartha.com/en/karir
+- type: LLMsTxt
+  url: llms/amartha-llms.txt
+x-enrichment:
+  date: '2026-08-06'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
+x-coverage:
+  state: gated
+  reason: sales-gate
+  detail: >-
+    Amartha markets Embedded Lending and Institutional Investments to partner banks,
+    insurers and technology companies, but neither product page publishes an integration
+    reference — both route to an amartha.typeform.com contact form, and api./developer./docs.amartha.com
+    do not resolve at all.
+  evidence:
+  - url: https://amartha.com/en/bisnis/embedded-lending
+    status: 200
+  - url: https://amartha.typeform.com/loan-channeling
+    status: 200
+  - url: https://amartha.com/openapi.json
+    status: 404
+  - url: https://amartha.com/.well-known/api-catalog
+    status: 404
+  checked: '2026-08-06'
