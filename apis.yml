@@ -43,7 +43,7 @@ created: '2026-08-06'
 modified: '2026-08-06'
 tags:
 - Company
-- Financial-Services
+- Financial Services
 - Fintech
 - Lending
 - Microfinance
@@ -61,6 +61,7 @@ tags_raw:
 - Financial Inclusion
 - Payments
 - Indonesia
+- Financial-Services
 apis: []
 maintainers:
 - FN: Kin Lane
